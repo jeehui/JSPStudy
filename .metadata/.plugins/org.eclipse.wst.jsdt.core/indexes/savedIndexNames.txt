@@ -1,0 +1,17 @@
+INDEX VERSION 1.4+C:\GDJ45\jspstudy\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+353578612.index
+3613477902.index
+2932060982.index
+1250140105.index
+4134242624.index
+3293476450.index
+3707835156.index
+1347195267.index
+1758066764.index
+3252334281.index
+4042860969.index
+391589788.index
+2223571457.index
+1046539880.index
+1222630069.index
+1052416692.index

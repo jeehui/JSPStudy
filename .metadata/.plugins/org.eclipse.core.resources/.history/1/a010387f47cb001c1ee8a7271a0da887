@@ -1,0 +1,17 @@
+package service;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GuroPointFocInfoService {
+	public void execute(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		//API
+		String apiURL = "http://apis.data.go.kr/3160000/guroPointFocInfoSvc/getGuro10PointFocInfoSvc";
+		apiURL += "?serviceKey=인증키";
+		apiURL += "&numOfRows=10";
+		apiURL += "&pageNo=1";
+		apiURL += "&returnType=xml";
+	}
+}

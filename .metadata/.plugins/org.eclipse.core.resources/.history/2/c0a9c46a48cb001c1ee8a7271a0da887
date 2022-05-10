@@ -1,0 +1,24 @@
+package service;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GuroPointFocInfoService {
+	public void execute(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		//API 주소
+		String  apiURL = null;
+		try {
+		apiURL = "http://apis.data.go.kr/3160000/guroPointFocInfoSvc/getGuro10PointFocInfoSvc";
+		apiURL += "?serviceKey=" + URLEncoder.encode(인증키, "UTF-8");
+		apiURL += "&numOfRows=" + URLEncoder.encode(10, "UTF-8");
+		apiURL += "&pageNo=" + URLEncoder.encode(1, "UTF-8");
+		apiURL += "&returnType=" + URLEncoder.encode(xml, "UTF-8");
+		}catch(UnsupportedEncodingException e) {
+			
+		}
+	}
+}

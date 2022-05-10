@@ -1,0 +1,27 @@
+package service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import domain.MemberDTO;
+import repository.MemberDAO;
+
+public class AddService implements MemberService {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String gender = request.getParameter("gender");
+		String address = request.getParameter("address");
+		
+		MemberDTO member = MemberDTO.builder()
+				.id(id)
+				.name(name)
+				.gender(gender)
+				.address(address)
+				.build();
+		int res = MemberDAO.getInstance().insertMember(member);
+	}
+
+}
