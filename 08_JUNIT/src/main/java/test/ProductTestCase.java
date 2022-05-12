@@ -2,10 +2,8 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import jdbc.ProductDAO;
@@ -23,7 +21,7 @@ import jdbc.ProductDTO;
 
 
 
-class ProductTestCase {
+class StaffTestCase {
 	
 	// @BeforeEach  //JUnit  테스트 이전에 실행되는 메소드이다.
 	void 제품등록테스트() {
